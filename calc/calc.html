@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html,
+        body {
+            font-family: 'Tomorrow', sans-serif;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+
+            background-color: #4094c6;
+
+        }
+
+        div {
+            position: absolute;
+            width: 30%;
+            height: 70%;
+            top: 15%;
+            left: 35%;
+            background-color: #4e4e4e;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 96%;
+            height: 16%;
+            margin-top: 3%;
+            margin: 2%;
+            background-color: #a5d58a;
+            border-radius: 10px;
+            font-size: 6em;
+            text-align: right;
+            color: #464646;
+            padding-right: 15px;
+        }
+
+        button {
+            width: 22%;
+            height: 17%;
+            margin-top: 13px;
+            margin-left: 2.1%;
+            color: white;
+            background: #acacac;
+            font-size: 5em;
+        }
+
+        .blue {
+            background-color: #359cf0;
+        }
+
+        .red {
+            background-color: #f25b57;
+        }
+
+        .clear {
+            background-color: #f25b57;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cal" id="cal">
+        <input type="text" value="">
+        <button type="button" class="gray" value="7" onclick="operation(value)">7</button>
+        <button type="button" class="gray" value="8" onclick="operation(value)">8</button>
+        <button type="button" class="gray" value="9" onclick="operation(value)">9</button>
+        <button type="button" class="blue" value="/" onclick="operation(value)">/</button>
+        <button type="button" class="gray" value="4" onclick="operation(value)">4</button>
+        <button type="button" class="gray" value="5" onclick="operation(value)">5</button>
+        <button type="button" class="gray" value="6" onclick="operation(value)">6</button>
+        <button type="button" class="blue" value="*" onclick="operation(value)">*</button>
+        <button type="button" class="gray" value="1" onclick="operation(value)">1</button>
+        <button type="button" class="gray" value="2" onclick="operation(value)">2</button>
+        <button type="button" class="gray" value="3" onclick="operation(value)">3</button>
+        <button type="button" class="blue" value="-" onclick="operation(value)">-</button>
+        <button type="button" class="gray" value="0" onclick="operation(value)">0</button>
+        <button type="button" class="clear" value="clear" onclick="c()">C</button>
+        <button type="button" class="red" value="=" onclick="valueOut()">=</button>
+        <button type="button" class="blue" value="+" onclick="operation(value)">+</button>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
